@@ -1,0 +1,6 @@
+2024-12-08 07:31:53,851 ERROR frappe New Exception collected in error log
+Site: site1.local
+Form Dict: {'cmd': 'frappe.core.doctype.user.user.reset_password', 'user': 'fayaz.nasraty@gmail.com'}
+2024-12-08 08:50:08,127 ERROR frappe New Exception collected in error log
+Site: site1.local
+Form Dict: {'cmd': 'frappe.core.doctype.user.user.reset_password', 'user': 'fayaz.nasraty@gmail.com'}

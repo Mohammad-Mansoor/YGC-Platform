@@ -1,0 +1,313 @@
+2024-12-04 10:12:57,420 DEBUG cd frappe-bench && python3 -m venv env
+2024-12-04 10:13:00,403 DEBUG cd frappe-bench && /home/afp-arp/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-04 10:13:02,454 DEBUG cd frappe-bench && /home/afp-arp/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-12-04 10:13:05,073 LOG Getting frappe
+2024-12-04 10:13:05,073 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-12-04 10:13:31,356 LOG Installing frappe
+2024-12-04 10:13:31,357 DEBUG cd /home/afp-arp/frappe-bench && /home/afp-arp/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/afp-arp/frappe-bench/apps/frappe 
+2024-12-04 10:14:14,697 DEBUG cd /home/afp-arp/frappe-bench/apps/frappe && yarn install --check-files
+2024-12-04 10:16:47,077 DEBUG cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-04 10:16:47,282 WARNING cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-04 10:16:47,282 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-04 10:16:47,283 DEBUG cd frappe-bench && bench build
+2024-12-04 10:16:47,410 INFO /usr/local/bin/bench build
+2024-12-04 10:17:30,136 LOG setting up backups
+2024-12-04 10:17:30,151 LOG backups were set up
+2024-12-04 10:17:30,151 INFO Bench frappe-bench initialized
+2024-12-04 10:18:20,055 INFO /usr/local/bin/bench new-site site1.local
+2024-12-04 10:18:51,270 INFO /usr/local/bin/bench new-site site1.local
+2024-12-04 10:23:46,065 INFO /usr/local/bin/bench new-site site1.local
+2024-12-04 10:25:49,100 INFO /usr/local/bin/bench new-site site1.local
+2024-12-04 10:27:10,576 INFO /usr/local/bin/bench get-app payments
+2024-12-04 10:27:11,533 LOG Getting payments
+2024-12-04 10:27:11,533 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2024-12-04 10:27:16,255 LOG Installing payments
+2024-12-04 10:27:16,256 DEBUG cd /home/afp-arp/frappe-bench && /home/afp-arp/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/afp-arp/frappe-bench/apps/payments 
+2024-12-04 10:28:03,831 DEBUG bench build --app payments
+2024-12-04 10:28:03,939 INFO /usr/local/bin/bench build --app payments
+2024-12-04 10:28:05,944 DEBUG cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-04 10:28:06,168 WARNING cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-04 10:28:06,168 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-04 10:30:34,940 INFO /usr/local/bin/bench get-app --branch version-15 erpnext
+2024-12-04 10:30:35,960 LOG Getting erpnext
+2024-12-04 10:30:35,960 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-12-04 10:31:22,595 WARNING cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream executed with exit code 128
+2024-12-04 10:31:22,596 WARNING /usr/local/bin/bench get-app --branch version-15 erpnext executed with exit code 1
+2024-12-04 10:32:26,842 INFO /usr/local/bin/bench get-app --branch version-15 erpnext
+2024-12-04 10:32:27,739 LOG Getting erpnext
+2024-12-04 10:32:27,740 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-12-04 10:32:29,089 WARNING /usr/local/bin/bench get-app --branch version-15 erpnext executed with exit code 1
+2024-12-04 10:32:51,865 INFO /usr/local/bin/bench get-app --branch version-15 erpnext
+2024-12-04 10:32:52,736 LOG Getting erpnext
+2024-12-04 10:32:52,736 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-12-04 10:33:13,405 LOG Installing erpnext
+2024-12-04 10:33:13,406 DEBUG cd /home/afp-arp/frappe-bench && /home/afp-arp/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/afp-arp/frappe-bench/apps/erpnext 
+2024-12-04 10:33:20,555 DEBUG cd /home/afp-arp/frappe-bench/apps/erpnext && yarn install --check-files
+2024-12-04 10:33:21,095 DEBUG bench build --app erpnext
+2024-12-04 10:33:21,229 INFO /usr/local/bin/bench build --app erpnext
+2024-12-04 10:33:25,193 DEBUG cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-04 10:33:25,388 WARNING cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-04 10:33:25,388 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-04 10:34:17,857 INFO /usr/local/bin/bench get-app hrms
+2024-12-04 10:34:18,823 LOG Getting hrms
+2024-12-04 10:34:18,823 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2024-12-04 10:34:25,351 LOG Installing hrms
+2024-12-04 10:34:25,352 DEBUG cd /home/afp-arp/frappe-bench && /home/afp-arp/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/afp-arp/frappe-bench/apps/hrms 
+2024-12-04 10:34:28,328 DEBUG cd /home/afp-arp/frappe-bench/apps/hrms && yarn install --check-files
+2024-12-04 10:37:31,193 DEBUG bench build --app hrms
+2024-12-04 10:37:31,331 INFO /usr/local/bin/bench build --app hrms
+2024-12-04 10:38:01,817 DEBUG cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe:
+2024-12-04 10:38:02,033 WARNING cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-04 10:38:02,034 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-04 10:38:12,184 INFO /usr/local/bin/bench --site site1.local install-app erpnext
+2024-12-04 10:39:38,260 INFO /usr/local/bin/bench --site site1.local install-app hrms
+2024-12-04 10:41:23,931 INFO /usr/local/bin/bench --site site1.local install-app hrms
+2024-12-04 10:41:48,337 INFO /usr/local/bin/bench start
+2024-12-04 10:41:48,593 INFO /usr/local/bin/bench watch
+2024-12-04 10:41:48,595 INFO /usr/local/bin/bench schedule
+2024-12-04 10:41:48,684 INFO /usr/local/bin/bench worker
+2024-12-04 10:41:48,771 INFO /usr/local/bin/bench serve --port 8000
+2024-12-04 11:05:10,380 INFO /usr/local/bin/bench stop
+2024-12-04 11:15:36,039 INFO /usr/local/bin/bench start
+2024-12-04 11:28:32,744 INFO /usr/local/bin/bench start
+2024-12-04 11:43:25,391 INFO /usr/local/bin/bench start
+2024-12-04 11:43:36,422 INFO /usr/local/bin/bench stop
+2024-12-04 12:00:01,674 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-04 12:00:01,683 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-04 18:00:01,912 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-04 18:00:01,916 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-05 00:00:01,190 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-05 00:00:01,198 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-05 04:59:07,027 INFO /usr/local/bin/bench start
+2024-12-05 05:59:35,029 INFO /usr/local/bin/bench --site site1.local enable-scheduler
+2024-12-05 05:59:43,034 INFO /usr/local/bin/bench --site site1.local set-maintenance-mode off
+2024-12-05 06:00:02,125 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-05 06:00:02,138 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-05 06:06:19,122 INFO /usr/local/bin/bench setup production afp-arp
+2024-12-05 06:06:19,128 DEBUG sudo /usr/bin/python3 -m pip install ansible
+2024-12-05 06:07:45,816 DEBUG bench setup role fail2ban
+2024-12-05 06:07:45,930 INFO /usr/local/bin/bench setup role fail2ban
+2024-12-05 06:08:06,593 DEBUG bench setup role nginx
+2024-12-05 06:08:06,856 INFO /usr/local/bin/bench setup role nginx
+2024-12-05 06:08:28,013 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-12-05 06:08:28,013 LOG Updated supervisord.conf: 'chown' changed from '' to 'afp-arp:afp-arp'
+2024-12-05 06:08:28,081 DEBUG sudo /usr/sbin/nginx -t
+2024-12-05 06:08:28,113 DEBUG sudo systemctl reload nginx
+2024-12-05 06:09:10,716 INFO /usr/local/bin/bench setup nginx
+2024-12-05 06:09:56,433 INFO /usr/local/bin/bench setup production afp-arp
+2024-12-05 06:09:56,439 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-12-05 06:09:56,440 LOG Updated supervisord.conf: 'chown' changed from '' to 'afp-arp:afp-arp'
+2024-12-05 06:10:17,219 DEBUG /usr/bin/supervisorctl reread
+2024-12-05 06:10:17,418 DEBUG /usr/bin/supervisorctl update
+2024-12-05 06:10:17,774 DEBUG sudo /usr/sbin/nginx -t
+2024-12-05 06:10:17,819 DEBUG sudo systemctl reload nginx
+2024-12-05 06:10:17,969 INFO /usr/local/bin/bench schedule
+2024-12-05 06:10:18,146 INFO /usr/local/bin/bench worker --queue short,default
+2024-12-05 06:10:18,260 INFO /usr/local/bin/bench worker --queue long,default,short
+2024-12-05 06:50:06,672 INFO /usr/local/bin/bench start
+2024-12-05 06:56:21,697 INFO /usr/local/bin/bench start
+2024-12-05 07:01:43,919 INFO /usr/local/bin/bench start
+2024-12-05 07:01:44,192 INFO /usr/local/bin/bench schedule
+2024-12-05 07:01:44,251 INFO /usr/local/bin/bench serve --port 8000
+2024-12-05 07:01:44,273 INFO /usr/local/bin/bench watch
+2024-12-05 07:01:44,289 INFO /usr/local/bin/bench worker
+2024-12-05 09:18:03,641 INFO /usr/local/bin/bench start
+2024-12-05 09:22:06,794 INFO /usr/local/bin/bench start
+2024-12-05 09:22:07,065 INFO /usr/local/bin/bench schedule
+2024-12-05 09:22:07,093 INFO /usr/local/bin/bench worker
+2024-12-05 09:22:07,120 INFO /usr/local/bin/bench serve --port 8000
+2024-12-05 09:22:07,133 INFO /usr/local/bin/bench watch
+2024-12-05 09:23:57,125 INFO /usr/local/bin/bench start
+2024-12-05 09:23:57,409 INFO /usr/local/bin/bench schedule
+2024-12-05 09:23:57,449 INFO /usr/local/bin/bench serve --port 8000
+2024-12-05 09:23:57,488 INFO /usr/local/bin/bench watch
+2024-12-05 09:23:57,523 INFO /usr/local/bin/bench worker
+2024-12-05 09:30:01,811 INFO /usr/local/bin/bench start
+2024-12-05 09:30:02,069 INFO /usr/local/bin/bench schedule
+2024-12-05 09:30:02,079 INFO /usr/local/bin/bench watch
+2024-12-05 09:30:02,141 INFO /usr/local/bin/bench worker
+2024-12-05 09:30:02,282 INFO /usr/local/bin/bench serve --port 8000
+2024-12-05 09:47:11,202 INFO /usr/local/bin/bench start
+2024-12-05 09:51:05,536 INFO /usr/local/bin/bench start
+2024-12-05 09:51:05,829 INFO /usr/local/bin/bench watch
+2024-12-05 09:51:05,829 INFO /usr/local/bin/bench schedule
+2024-12-05 09:51:05,951 INFO /usr/local/bin/bench worker
+2024-12-05 09:51:05,980 INFO /usr/local/bin/bench serve --port 8000
+2024-12-05 11:13:33,032 INFO /usr/local/bin/bench start
+2024-12-05 11:13:33,329 INFO /usr/local/bin/bench schedule
+2024-12-05 11:13:33,336 INFO /usr/local/bin/bench watch
+2024-12-05 11:13:33,356 INFO /usr/local/bin/bench serve --port 8000
+2024-12-05 11:13:33,360 INFO /usr/local/bin/bench worker
+2024-12-05 11:15:43,834 INFO /usr/local/bin/bench start
+2024-12-05 11:15:44,142 INFO /usr/local/bin/bench worker
+2024-12-05 11:15:44,146 INFO /usr/local/bin/bench watch
+2024-12-05 11:15:44,168 INFO /usr/local/bin/bench schedule
+2024-12-05 11:15:44,176 INFO /usr/local/bin/bench serve --port 8000
+2024-12-05 11:17:29,933 INFO /usr/local/bin/bench start
+2024-12-05 11:17:30,220 INFO /usr/local/bin/bench watch
+2024-12-05 11:17:30,223 INFO /usr/local/bin/bench worker
+2024-12-05 11:17:30,246 INFO /usr/local/bin/bench serve --port 8000
+2024-12-05 11:17:30,317 INFO /usr/local/bin/bench schedule
+2024-12-05 11:30:06,082 INFO /usr/local/bin/bench start
+2024-12-05 11:30:06,341 INFO /usr/local/bin/bench serve --port 8080
+2024-12-05 11:30:06,385 INFO /usr/local/bin/bench watch
+2024-12-05 11:30:06,441 INFO /usr/local/bin/bench schedule
+2024-12-05 11:30:06,492 INFO /usr/local/bin/bench worker
+2024-12-05 11:37:40,398 INFO /usr/local/bin/bench start
+2024-12-05 11:37:40,657 INFO /usr/local/bin/bench watch
+2024-12-05 11:37:40,673 INFO /usr/local/bin/bench serve --port 80
+2024-12-05 11:37:40,697 INFO /usr/local/bin/bench worker
+2024-12-05 11:37:40,791 INFO /usr/local/bin/bench schedule
+2024-12-05 11:41:06,986 INFO /usr/local/bin/bench start
+2024-12-05 11:41:07,241 INFO /usr/local/bin/bench watch
+2024-12-05 11:41:07,252 INFO /usr/local/bin/bench serve --port 8000
+2024-12-05 11:41:07,344 INFO /usr/local/bin/bench worker
+2024-12-05 11:41:07,430 INFO /usr/local/bin/bench schedule
+2024-12-05 11:49:31,895 INFO /usr/local/bin/bench start
+2024-12-05 11:49:32,205 INFO /usr/local/bin/bench watch
+2024-12-05 11:49:32,211 INFO /usr/local/bin/bench worker
+2024-12-05 11:49:32,219 INFO /usr/local/bin/bench serve --port 8000
+2024-12-05 11:49:32,384 INFO /usr/local/bin/bench schedule
+2024-12-05 11:54:56,400 INFO /usr/local/bin/bench start
+2024-12-05 11:54:56,668 INFO /usr/local/bin/bench serve --port 8000
+2024-12-05 11:54:56,675 INFO /usr/local/bin/bench watch
+2024-12-05 11:54:56,856 INFO /usr/local/bin/bench schedule
+2024-12-05 11:54:56,861 INFO /usr/local/bin/bench worker
+2024-12-05 12:00:01,819 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-05 12:00:01,823 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-05 18:00:01,998 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-05 18:00:02,043 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-06 00:00:01,339 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-06 00:00:01,382 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-06 06:00:01,768 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-06 06:00:01,804 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-06 12:00:02,125 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-06 12:00:02,143 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-06 18:00:02,131 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-06 18:00:02,165 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-07 00:00:01,665 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-07 00:00:01,665 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-07 04:25:17,484 INFO /usr/local/bin/bench start
+2024-12-07 06:00:01,707 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-07 06:00:01,734 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-07 08:46:37,622 INFO /usr/local/bin/bench start
+2024-12-07 08:46:52,027 INFO /usr/local/bin/bench stop
+2024-12-07 08:47:01,366 INFO /usr/local/bin/bench status
+2024-12-07 08:49:38,897 INFO /usr/local/bin/bench start
+2024-12-07 08:51:23,948 INFO /usr/local/bin/bench start
+2024-12-07 08:51:24,227 INFO /usr/local/bin/bench serve --port 8000
+2024-12-07 08:51:24,281 INFO /usr/local/bin/bench schedule
+2024-12-07 08:51:24,304 INFO /usr/local/bin/bench watch
+2024-12-07 08:51:24,412 INFO /usr/local/bin/bench worker
+2024-12-07 08:52:31,311 INFO /usr/local/bin/bench start
+2024-12-07 08:52:31,606 INFO /usr/local/bin/bench schedule
+2024-12-07 08:52:31,608 INFO /usr/local/bin/bench serve --port 8000
+2024-12-07 08:52:31,694 INFO /usr/local/bin/bench watch
+2024-12-07 08:52:31,696 INFO /usr/local/bin/bench worker
+2024-12-07 08:54:18,291 INFO /usr/local/bin/bench use site1.local
+2024-12-07 08:54:21,871 INFO /usr/local/bin/bench start
+2024-12-07 08:54:22,143 INFO /usr/local/bin/bench watch
+2024-12-07 08:54:22,149 INFO /usr/local/bin/bench serve --port 8000
+2024-12-07 08:54:22,226 INFO /usr/local/bin/bench schedule
+2024-12-07 08:54:22,236 INFO /usr/local/bin/bench worker
+2024-12-07 09:27:31,181 INFO /usr/local/bin/bench --site site1.local enable-scheduler
+2024-12-07 09:27:45,019 INFO /usr/local/bin/bench --site site1.local set-maintenance-mode off
+2024-12-07 09:28:31,408 INFO /usr/local/bin/bench setup production afp-arp
+2024-12-07 09:28:31,414 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-12-07 09:28:31,414 LOG Updated supervisord.conf: 'chown' changed from '' to 'afp-arp:afp-arp'
+2024-12-07 09:28:37,036 DEBUG /usr/bin/supervisorctl reread
+2024-12-07 09:28:37,229 DEBUG /usr/bin/supervisorctl update
+2024-12-07 09:28:37,561 DEBUG sudo /usr/sbin/nginx -t
+2024-12-07 09:28:37,576 DEBUG sudo systemctl reload nginx
+2024-12-07 09:28:42,351 INFO /usr/local/bin/bench setup nginx
+2024-12-07 09:33:31,448 INFO /usr/local/bin/bench worker --queue long,default,short
+2024-12-07 09:33:31,509 INFO /usr/local/bin/bench worker --queue short,default
+2024-12-07 09:33:31,565 INFO /usr/local/bin/bench schedule
+2024-12-07 09:33:44,695 INFO /usr/local/bin/bench setup production afp-arp
+2024-12-07 09:33:44,701 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-12-07 09:33:44,702 LOG Updated supervisord.conf: 'chown' changed from '' to 'afp-arp:afp-arp'
+2024-12-07 09:33:48,373 DEBUG /usr/bin/supervisorctl reread
+2024-12-07 09:33:48,565 DEBUG /usr/bin/supervisorctl update
+2024-12-07 09:33:48,754 DEBUG sudo /usr/sbin/nginx -t
+2024-12-07 09:33:48,769 DEBUG sudo systemctl reload nginx
+2024-12-07 09:35:36,044 INFO /usr/local/bin/bench log
+2024-12-07 09:35:42,794 INFO /usr/local/bin/bench logs
+2024-12-07 09:43:39,457 INFO /usr/local/bin/bench schedule
+2024-12-07 09:43:39,497 INFO /usr/local/bin/bench worker --queue short,default
+2024-12-07 09:43:39,510 INFO /usr/local/bin/bench worker --queue long,default,short
+2024-12-07 09:44:14,569 INFO /usr/local/bin/bench restart
+2024-12-07 09:44:14,961 DEBUG cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2024-12-07 09:44:17,470 WARNING cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe-bench-web: executed with exit code 7
+2024-12-07 09:44:17,471 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-12-07 09:45:09,000 INFO /usr/local/bin/bench worker --queue long,default,short
+2024-12-07 09:45:09,020 INFO /usr/local/bin/bench worker --queue short,default
+2024-12-07 09:45:09,058 INFO /usr/local/bin/bench schedule
+2024-12-07 09:48:13,354 INFO /usr/local/bin/bench worker --queue long,default,short
+2024-12-07 09:48:13,378 INFO /usr/local/bin/bench schedule
+2024-12-07 09:48:13,449 INFO /usr/local/bin/bench worker --queue short,default
+2024-12-07 09:53:37,542 INFO /usr/local/bin/bench worker --queue long,default,short
+2024-12-07 09:53:37,589 INFO /usr/local/bin/bench schedule
+2024-12-07 09:53:37,671 INFO /usr/local/bin/bench worker --queue short,default
+2024-12-07 09:54:24,554 INFO /usr/local/bin/bench worker --queue long,default,short
+2024-12-07 09:54:24,632 INFO /usr/local/bin/bench schedule
+2024-12-07 09:54:24,669 INFO /usr/local/bin/bench worker --queue short,default
+2024-12-07 09:56:47,903 INFO /usr/local/bin/bench setup requirements --node
+2024-12-07 09:56:47,910 DEBUG cd ./apps/frappe && yarn install --check-files
+2024-12-07 09:56:52,495 DEBUG cd ./apps/erpnext && yarn install --check-files
+2024-12-07 09:56:52,839 DEBUG cd ./apps/hrms && yarn install --check-files
+2024-12-07 09:59:56,174 INFO /usr/local/bin/bench restart
+2024-12-07 09:59:56,556 DEBUG cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2024-12-07 09:59:59,052 WARNING cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe-bench-web: executed with exit code 7
+2024-12-07 09:59:59,055 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-12-07 10:01:38,185 INFO /usr/local/bin/bench restart
+2024-12-07 10:01:48,657 DEBUG cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2024-12-07 10:01:51,186 WARNING cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe-bench-web: executed with exit code 7
+2024-12-07 10:01:51,187 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-12-07 10:02:55,154 INFO /usr/local/bin/bench setup production afp-arp
+2024-12-07 10:02:55,160 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-12-07 10:02:55,160 LOG Updated supervisord.conf: 'chown' changed from '' to 'afp-arp:afp-arp'
+2024-12-07 10:02:58,148 DEBUG /usr/bin/supervisorctl reread
+2024-12-07 10:02:58,347 DEBUG /usr/bin/supervisorctl update
+2024-12-07 10:02:58,538 DEBUG sudo /usr/sbin/nginx -t
+2024-12-07 10:02:58,560 DEBUG sudo systemctl reload nginx
+2024-12-07 10:03:33,676 INFO /usr/local/bin/bench restart
+2024-12-07 10:03:34,076 DEBUG cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2024-12-07 10:03:36,535 WARNING cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe-bench-web: executed with exit code 7
+2024-12-07 10:03:36,536 WARNING /usr/local/bin/bench restart executed with exit code 1
+2024-12-07 10:10:58,793 INFO /usr/local/bin/bench restart
+2024-12-07 10:10:59,167 DEBUG cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2024-12-07 10:11:01,725 DEBUG cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe-bench-workers:
+2024-12-07 10:11:03,176 INFO /usr/local/bin/bench worker --queue long,default,short
+2024-12-07 10:11:03,213 INFO /usr/local/bin/bench worker --queue short,default
+2024-12-07 10:11:03,213 INFO /usr/local/bin/bench schedule
+2024-12-07 10:18:24,544 INFO /usr/local/bin/bench restart
+2024-12-07 10:18:24,929 DEBUG cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe-bench-web:
+2024-12-07 10:18:27,386 DEBUG cd /home/afp-arp/frappe-bench && sudo supervisorctl restart frappe-bench-workers:
+2024-12-07 10:18:27,939 INFO /usr/local/bin/bench worker --queue short,default
+2024-12-07 10:18:27,983 INFO /usr/local/bin/bench schedule
+2024-12-07 10:18:27,992 INFO /usr/local/bin/bench worker --queue long,default,short
+2024-12-07 10:19:03,927 INFO /usr/local/bin/bench schedule
+2024-12-07 10:19:03,961 INFO /usr/local/bin/bench worker --queue short,default
+2024-12-07 10:19:04,085 INFO /usr/local/bin/bench worker --queue long,default,short
+2024-12-07 12:00:01,991 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-07 12:00:02,014 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-07 18:00:01,712 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-07 18:00:01,741 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-08 00:00:01,338 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-08 00:00:01,339 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-08 06:00:01,745 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-08 06:00:01,775 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-08 12:00:01,256 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-08 12:00:01,259 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-08 18:00:01,685 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-08 18:00:01,691 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-09 00:00:01,306 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-09 00:00:01,311 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-09 06:00:01,968 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-09 06:00:01,982 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-09 12:00:01,564 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-09 12:00:01,571 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-09 18:00:01,624 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-09 18:00:01,626 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-10 00:00:01,866 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-10 00:00:01,870 INFO /usr/local/bin/bench --verbose --site all backup
